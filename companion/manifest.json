@@ -1,0 +1,26 @@
+{
+	"id": "daktronics-dmp",
+	"name": "daktronics-dmp",
+	"shortname": "daktronics-dmp",
+	"description": "For sending basic commands to a Daktronics DMP",
+	"version": "1.0.0",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-your-module-name.git",
+	"bugs": "https://github.com/bitfocus/companion-module-your-module-name/issues",
+	"maintainers": [
+		{
+			"name": "Eddie Wettach",
+			"email": "ewettach@gmail.com"
+		}
+	],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "0.0.0",
+		"entrypoint": "../main.js"
+	},
+	"legacyIds": [],
+	"manufacturer": "Daktronics",
+	"products": ["DMP"],
+	"keywords": []
+}
