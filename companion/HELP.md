@@ -1,7 +1,7 @@
 # Daktronics DMP
 
 Daktronics DMP v1.0.1<br>
-5/6/2023<br>
+4/14/2024<br>
 Eddie Wettach <ewettach@gmail.com>
 
 ## Change Log
