@@ -1,11 +1,12 @@
 # Daktronics DMP
 
-Daktronics DMP v1.0.0<br>
+Daktronics DMP v1.0.1<br>
 5/6/2023<br>
 Eddie Wettach <ewettach@gmail.com>
 
 ## Change Log
 
+1.0.1 - Bug fix with manifest to support version 3.1+ of Companion
 1.0.0 - Initial support for Daktronics DMP - blanking display zones and playing files in display zones
 
 ### Requirements:

@@ -3,10 +3,10 @@
 	"name": "daktronics-dmp",
 	"shortname": "daktronics-dmp",
 	"description": "For sending basic commands to a Daktronics DMP",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"license": "MIT",
-	"repository": "git+https://github.com/bitfocus/companion-module-your-module-name.git",
-	"bugs": "https://github.com/bitfocus/companion-module-your-module-name/issues",
+	"repository": "git+https://github.com/ewettach/companion-module-daktronics-dmp.git",
+	"bugs": "https://github.com/ewettach/companion-module-daktronics-dmp/issues",
 	"maintainers": [
 		{
 			"name": "Eddie Wettach",

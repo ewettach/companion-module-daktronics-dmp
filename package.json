@@ -1,6 +1,6 @@
 {
 	"name": "daktronics-dmp",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"main": "main.js",
 	"scripts": {
 		"format": "prettier -w ."
@@ -8,7 +8,7 @@
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/bitfocus/companion-module-your-module-name.git"
+		"url": "git+https://github.com/ewettach/companion-module-daktronics-dmp.git"
 	},
 	"dependencies": {
 		"@companion-module/base": "~1.4.0"
