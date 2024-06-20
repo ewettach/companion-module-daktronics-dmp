@@ -99,12 +99,23 @@ class ModuleInstance extends InstanceBase {
 
 		switch (action.actionId) {
 			case 'play_file':
+
 				// If the absolute path and filename is set, then use it, otherwise use the relative path and filename.
 				if (action.options.file_name) {
 					var unique_file_name = action.options.file_name
 				} else {
 					var unique_file_name = self.config.default_path + action.options.relative_name
 				}
+
+				// Play Mode
+				if (action.options.play_mode == '0') {
+					var play_mode = 'OneTime'
+				} else if (action.options.play_mode == '1') {
+					var play_mode = 'Continuous'
+				} else {
+					var play_mode = 'Continuous'
+				}
+
 				// for adding double backslashes in the filepath and filename
 				let regex = /\\/g
 
@@ -114,19 +125,26 @@ class ModuleInstance extends InstanceBase {
 					sign_id +
 					'</SignId></sign><options><File><Mode>UniqueFilename</Mode><UniqueFilename>' +
 					unique_file_name.replace(regex, '\\\\') +
-					'</UniqueFilename></File><PlayMode>Continuous</PlayMode></options></Play>' +
+					'</UniqueFilename></File><PlayMode>' + play_mode + '</PlayMode></options></Play>' +
 					envelope_footer
+
 				this.log('info', 'Playing File: ' + unique_file_name + ' on sign id: ' + sign_id)
+
 				break
+
 			case 'blank_display':
+
 				var body =
 					envelope_header +
 					'<Blank xmlns="http://standards.daktronics.com/schemas/playerservices/playercontrol_1_0.wsdl"><sign><Mode>Name</Mode><SignId>' +
 					sign_id +
 					'</SignId></sign></Blank>' +
 					envelope_footer
+
 				this.log('info', 'Blanking Display: ' + sign_id)
+
 				break
+
 		}
 
 		// Compile the http request to be made
